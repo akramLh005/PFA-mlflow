@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/RT4/PFA/mlflow/mlruns/0/1cf6b85423d049dab2dd206df432a97b/artifacts
+end_time: 1712080794494
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1cf6b85423d049dab2dd206df432a97b
+run_name: powerful-wolf-496
+run_uuid: 1cf6b85423d049dab2dd206df432a97b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712080790674
+status: 3
+tags: []
+user_id: akram
