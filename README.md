@@ -13,7 +13,6 @@
 
 - Python 3.7 or higher
 - MLflow
-- DagsHub
 
 ### Installation
 
