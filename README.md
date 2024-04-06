@@ -15,16 +15,17 @@
 - MLflow
 
 ### Installation
-1. install dependencies :
-```bash
-pip install -r requirements.txt
-```
-   
-2. Clone the repository
+1. Clone the repository
 ```bash
 git clone https://github.com/akramLh005/PFA-mlflow.git
 ```
 
+2. install dependencies :
+```bash
+pip install -r requirements.txt
+```
+
+ 
 ### Configuration Steps : 
 This guide will walk you through the steps to configure your model scripts to send metrics to our centralized MLflow server hosted on DagsHub.
 ##### 1. Set Environment Variables 
