@@ -36,7 +36,7 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/akramLh005/PFA-mlflow.mlflow
 export MLFLOW_TRACKING_USERNAME=akramLh005
 export MLFLOW_TRACKING_PASSWORD=<password>
 ```
-Replace <password> with the actual password provided.
+Replace \<password\> with the actual password provided.
 
 ##### 2. Update Your Model Script 
 
