@@ -15,8 +15,12 @@
 - MLflow
 
 ### Installation
-
-1. Clone the repository
+1. install dependencies :
+```bash
+pip install -r requirements
+```
+   
+2. Clone the repository
 ```bash
 git clone https://github.com/akramLh005/PFA-mlflow.git
 ```
