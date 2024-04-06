@@ -41,13 +41,29 @@ Replace \<password\> with the actual password provided.
 ##### 2. Update Your Model Script 
 
 In your model script, add the following lines to configure MLflow to use the DagsHub server:
-
+```bash
 import mlflow
 
-```bash
 remote_server_uri = "https://dagshub.com/akramLh005/PFA-mlflow.mlflow"
 mlflow.set_tracking_uri(remote_server_uri)
 ```
 
+##### 3. Log Parameters and Metrics 
+Within your script, use the mlflow.log_param and mlflow.log_metric functions to log parameters and metrics:
+```bash
+# Example parameters
+mlflow.log_param("alpha", alpha)
+mlflow.log_param("l1_ratio", l1_ratio)
 
+# Example metrics
+mlflow.log_metric("rmse", rmse)
+mlflow.log_metric("r2", r2)
+mlflow.log_metric("mae", mae)
+```
+Ensure you replace alpha, l1_ratio, rmse, r2, and mae with the actual variables from your script.
 
+##### 4. Running Your Script
+Run your script as usual. The metrics and parameters will automatically be logged to the DagsHub MLflow server.
+
+##### 5. Verifying Metrics on DagsHub
+After running your script, log into DagsHub and navigate to your project's MLflow page to verify that the metrics and parameters have been logged correctly.
