@@ -7,25 +7,22 @@
 
 ## Part : ML Experiments with MLflow and DagsHub
 
-### Introduction
-
-This project is about conducting Machine Learning experiments using MLflow and DagsHub. MLflow is an open-source platform to manage the ML lifecycle, including experimentation, reproducibility, and deployment. DagsHub is a platform built for data version control and collaboration.
 
 
-#### Prerequisites
+### Prerequisites
 
 - Python 3.7 or higher
 - MLflow
 - DagsHub
 
-#### Installation
+### Installation
 
 1. Clone the repository
 ```bash
 git clone <repository-url>
 ```
 
-#### Configuration Steps : 
+### Configuration Steps : 
 This guide will walk you through the steps to configure your model scripts to send metrics to our centralized MLflow server hosted on DagsHub.
 ##### 1. Set Environment Variables 
 
@@ -38,7 +35,7 @@ export MLFLOW_TRACKING_PASSWORD=<password>
 ```
 Replace \<password\> with the actual password provided.
 
-##### 2. Update Your Model Script 
+#### 2. Update Your Model Script 
 
 In your model script, add the following lines to configure MLflow to use the DagsHub server:
 ```bash
@@ -48,7 +45,7 @@ remote_server_uri = "https://dagshub.com/akramLh005/PFA-mlflow.mlflow"
 mlflow.set_tracking_uri(remote_server_uri)
 ```
 
-##### 3. Log Parameters and Metrics 
+#### 3. Log Parameters and Metrics 
 Within your script, use the mlflow.log_param and mlflow.log_metric functions to log parameters and metrics:
 ```bash
 # Example parameters
@@ -62,8 +59,8 @@ mlflow.log_metric("mae", mae)
 ```
 Ensure you replace alpha, l1_ratio, rmse, r2, and mae with the actual variables from your script.
 
-##### 4. Running Your Script
+#### 4. Running Your Script
 Run your script as usual. The metrics and parameters will automatically be logged to the DagsHub MLflow server.
 
-##### 5. Verifying Metrics on DagsHub
+#### 5. Verifying Metrics on DagsHub
 After running your script, log into DagsHub and navigate to your project's MLflow page to verify that the metrics and parameters have been logged correctly.
