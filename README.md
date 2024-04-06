@@ -17,7 +17,7 @@
 ### Installation
 1. install dependencies :
 ```bash
-pip install -r requirements
+pip install -r requirements.txt
 ```
    
 2. Clone the repository
