@@ -27,5 +27,5 @@ git clone <repository-url>
 
 #### Configuration Steps : 
 This guide will walk you through the steps to configure your model scripts to send metrics to our centralized MLflow server hosted on DagsHub.
+##### 1. Set Environment Variables
 
-1. 
